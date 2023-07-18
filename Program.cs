@@ -12,7 +12,6 @@ namespace Doviz
             decimal UZS =  11607 * USD;
             Console.WriteLine($"{USD} USD = {UZS} UZS");
             
-
         }
     }
 }
