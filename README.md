@@ -1,9 +1,9 @@
-# Doviz
+# Doviz v1.0
 Your Ultimate Conversion tool
 Have a look at `Program.cs` file and you can see how I have used:
 
 * Console input/output
-* Convert Dollars to Sum
+* Arithmetic operation for Convert Dollars to Sum
 
 ## Demo
 ![demo](./Assets/demo-live.gif)
