@@ -6,6 +6,7 @@ This is an improved version **[v1.0](https://github.com/Jarus95/Doviz/tree/relea
 Have a look at `Program.cs` file and you can see how I have used:
 
 * Console input/output
+* Logical operations (Switch case)
 * Arithmetic operation for Convert Dollars to Sum and back Sum to Dollars
 
 ## Demo
