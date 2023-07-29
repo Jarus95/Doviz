@@ -15,30 +15,38 @@ namespace Doviz
                 String stringNumber = Console.ReadLine();
                 int number = int.Parse(stringNumber);
                 
-                if(number == 1)
+                try
                 {
-                   Console.WriteLine("USD to UZS");
-                   Console.Write("Enter Amount USD: ");
-                   decimal USD = decimal.Parse(Console.ReadLine());
-                   System.Console.WriteLine("Converting from USD to UZS...");
-                   decimal UZS =  11607 * USD;
-                   Console.WriteLine($"{USD} USD = {UZS} UZS");
+                    if(number == 1)
+                    {
+                       Console.WriteLine("USD to UZS");
+                       Console.Write("Enter Amount USD: ");
+                       decimal USD = decimal.Parse(Console.ReadLine());
+                       System.Console.WriteLine("Converting from USD to UZS...");
+                       decimal UZS =  11607 * USD;
+                       Console.WriteLine($"{USD} USD = {UZS} UZS");
+                    }
+
+                    else if(number == 2)
+                    {
+                       Console.WriteLine("UZS to USD");
+                       Console.Write("Enter Amount UZS: ");
+                       decimal UZS = decimal.Parse(Console.ReadLine());
+                       Console.WriteLine("Converting from UZS to USD...");
+                       decimal USD = UZS/11607;
+                     //USD = Math.Round(USD , 2);
+                       Console.WriteLine($"{UZS} UZS = {USD} USD");
+                    }
+
+                    else
+                      Console.WriteLine("Invalid input");
                 }
 
-                else if(number == 2)
+                catch(Exception ex)
                 {
-                   Console.WriteLine("UZS to USD");
-                   Console.Write("Enter Amount UZS: ");
-                   decimal UZS = decimal.Parse(Console.ReadLine());
-                   Console.WriteLine("Converting from UZS to USD...");
-                   decimal USD = UZS/11607;
-                 //USD = Math.Round(USD , 2);
-                   Console.WriteLine($"{UZS} UZS = {USD} USD");
+                    Console.WriteLine(ex.Message);
                 }
-
-                else
-                   Console.WriteLine("Invalid input");
-
+                
                  Console.WriteLine();
                  Console.Write("Do you want to Repeat? [y/n]: ");
                  string answer = Console.ReadLine();
