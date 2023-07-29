@@ -9,6 +9,7 @@ Have a look at `Program.cs` file and you can see how I have used:
 * Logical operations (Switch case)
 * Arithmetic operation 
 * Loop operation
+* The try-catch statement
 
 ## Demo
 ![demo](./Assets/demo-live-3.gif)
@@ -20,6 +21,7 @@ Have a look at `Program.cs` file and you can see how I have used:
 #### New Features
 * You can convert from UZS to USD
 * Program to ask you to try again
+* Handle exceptions that might occur during execution
 
 ### **[v1.0](https://github.com/Jarus95/Doviz/tree/releases/v1.0)**
 
